@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a">Hello</div>
+    <div class="a">Hello</div>
+    <div class="a">Hello</div>
+    <div class="a">Hello</div>
+    <div class="a">Hello</div><br>
+    <button onclick="querySelecto()">Query Selector</button><br><br>
+    <button onclick="querySelectoAll()">Query Selector All</button>
+    <script>
+        function querySelecto(){
+            document.querySelector(".a").style.color="red";
+        }
+        function querySelectoAll(){
+            var x = document.querySelectorAll(".a");
+            for(var i=0;i<x.length;i++){
+                x[i].style.color ="blue";
+            }
+        }
+        
+    </script>
+</body>
+</html>

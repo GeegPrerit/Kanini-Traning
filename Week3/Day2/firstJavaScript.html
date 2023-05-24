@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function message(){
+            //window.alert("Hello User You are welcome");
+        //}
+        
+    </script>
+</head>
+<body onload="message()">
+    <script>
+        var a=Number(prompt("Enter the value one"));
+        var b = Number(prompt("Enter the value two"));
+        var op = prompt("Enter your choice");
+        switch(op){
+            case '+':document.write("Welcome "+(a+b));
+            break;
+            case '*':document.write("Welcome "+(a*b));
+            break;
+            case '-':document.write("Welcome "+(a-b));
+            break;
+            case '/':document.write("Welcome "+(a/b));
+            break;
+        }
+        document.write("Welcome "+(a+b)+"!!");
+    </script>
+</body>
+</html>

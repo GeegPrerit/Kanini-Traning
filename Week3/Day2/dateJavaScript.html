@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        var day=d.getDay()+4;
+        //window.alert(day);
+        //var result = day%7;
+        switch(day){
+            case 0:document.write("<b> <h1><font color='Blue'>"+"Sunday"+"</font></h1></b>");
+            break;
+            case 1:document.write("<b> <h1><font color='Red'>"+"Monday"+"</font></h1></b>");
+            break;
+            case 2:document.write("<b> <h1><font color='Green'>"+"Tuesday"+"</font></h1></b>");
+            break;
+            case 3:document.write("<b> <h1><font color='Yellow'>"+"Wednesday"+"</font></h1></b>");
+            break;
+            case 4:document.write("<b> <h1><font color='Purple'>"+"Thrusday"+"</font></h1></b>");
+            break;
+            case 5:document.write("<b> <h1><font color='Grey'>"+"Friday"+"</font></h1></b>");
+            break;
+            case 6:document.write("<b> <h1><font color='Orange'>"+"Saturday"+"</font></h1></b>");
+            break;
+        }
+    </script>
+</body>
+</html>

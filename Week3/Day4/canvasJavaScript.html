@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" style="border:solid"; width="50" height="50"></canvas>
+    <script>
+        var canvas=document.getElementById("mycanvas");
+        var context=canvas.getContext("2d");
+        var centerx=canvas.width/2;
+        //var centery=canvas.height/2;
+        //var radius=15;
+        context.beginPath();
+        setInterval(function(){
+
+        
+        context.rect(13,12,25,25)
+        //context.arc(centerx,centery,radius,0,2*Math.PI);
+        context.fillStyle="gold";
+        context.fill();
+        },30);
+       
+    </script>
+</body>
+</html>
