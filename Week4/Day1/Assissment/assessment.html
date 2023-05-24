@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        body {
+            background-color: blueviolet;
+        }
+        
+    </style>
+    <script>
+        function billCalculation() {
+            var name = document.getElementById('customerName').value;
+            var Vadult = document.getElementById('vegAdult').value;
+            var Vkid = document.getElementById('vegKids').value;
+            var Nadult = document.getElementById('nonVegAdult').value;
+            var Nkid = document.getElementById('nonVegKids').value;
+
+            var count = parseInt(Vadult) + parseInt(Vkid) + parseInt(Nadult) + parseInt(Nkid);
+
+            var orignalCost = (parseInt(Vadult) * 599) + (parseInt(Vkid) * 249) + (parseInt(Nadult) * 699) + (parseInt(Nkid) * 349);
+            var GST = (orignalCost * 12) / 100;
+            var netPrice = orignalCost + GST;
+
+            if(count>=10) {
+                netPrice = netPrice - (netPrice * 0.10);
+            }
+
+            document.getElementById('result').innerHTML = "Hello " + name + ", you have to pay Rs." + netPrice.toFixed(2) + ". Thanks for coming!!!";
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <h1 style="align-items: center; background-color: red; text-align: center; color: white;">Delicious Buffet Restaurant</h1>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label><b>Customer Name</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="customerName" placeholder="Your name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Contact No.</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="contactNo" placeholder="Enter Mobile No.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Date</b></label>
+                    </td>
+                    <td>
+                        <input type="date" id="bookingDate">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Timing</b></td>
+                    <td><input type="radio" id="session1" name="fav_language" value="1-4pm">
+                        <label for="1-4pm">1-4pm</label>
+                        <input type="radio" id="session2" name="fav_language" value="4-7pm">
+                        <label for="4-7pm">4-7pm</label>
+                        <input type="radio" id="session3" name="fav_language" value="7-10pm">
+                        <label for="7-10pm">7-10pm</label></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <label><b>Vegitarian</b></label>
+                    </td>
+                    <td>
+                        <label><b>Adult</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="vegAdult">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Kids(5-9 Years)</b></label>
+                        <input type="text" id="vegKids">
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <label><b>Non-Vegitarian</b></label>
+                    </td>
+                    <td>
+                        <label><b>Adult</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="nonVegAdult">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Kids(5-9 Years)</b></label>
+                        <input type="text" id="nonVegKids">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Occasion</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="occasion">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Parking</b></label>
+                    </td>
+                    <td>
+                        <input type="checkbox"><b>Parking Required</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="submit" onclick="billCalculation()" type="button">Submit</button>
+                    </td>
+                    <td>
+                        <button id="reset" type="button" onclick=location.reload()>Clear</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <p id="result" style="color: white;"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

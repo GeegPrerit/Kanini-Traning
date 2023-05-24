@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JavaScript program to calculate multiplication and division of two numbers </title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+    <script>
+
+        function operationBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            var output = document.getElementById('a').value;
+            if (output == 'Addition') {
+                document.getElementById("result").innerHTML = parseInt(num1) + parseInt(num2);
+            }
+            else if (output == 'Subtract') {
+                document.getElementById("result").innerHTML = num1 - num2;
+            }
+            else if (output == 'Multiply') {
+                document.getElementById("result").innerHTML = num1 * num2;
+            }
+            else {
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Calculator</legend>
+        <center>
+        <form>
+            <img src="img/cal.jpg" alt="">
+            <br><br>
+            1st Number : <input type="text" id="firstNumber" /><br>
+            <br>
+            2nd Number: <input type="text" id="secondNumber" /><br>
+            <br>
+            Operations: 
+            <select name="" id="a">
+                <option value="Addition">Add</option>
+                <option value="Subtract">Substraction</option>
+                <option value="Multiply">Multiplication</option>
+                <option value="Divide">Divide</option>
+            </select>
+            <br><br>
+            <img src="img/calculate.jpeg" alt="" width="150" height="100" onclick="operationBy()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="img/reload.jpeg" alt="" width="100" height="100"  onclick="window.location.reload()">
+        </form>
+        
+        <p>The Result is : <br>
+            <span id="result"></span>
+        </p>
+    </center>
+    </fieldset>
+</body>
+
+</html>

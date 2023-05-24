@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function billCalculate(){
+
+            username = document.getElementById("customerName").value;
+            
+
+            va = document.getElementById("vegAdult").value*599;
+            //vc = document.getElementById("vegKids").value*249;
+            //nva = document.getElementById("nonVegAdult").value*699;
+            //nvc = document.getElementById("nonVegKid").value*349;
+            //total = va+vc+nva+nvc;
+            //grandTotal = total*12;
+            //gst = grandtotal/100; 
+            //bill = total+gst;
+            
+            document.getElementById("result").innerHTML = va+", You have to pay Rs.. Thanks for coming!!!";
+        }
+        
+    </script>
+    <style>
+        body{
+            background-color: #9370DB;
+            
+        }
+        h1{
+            background-color: #FF6347;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-align: center;
+        }
+        #res{
+            font-weight: bold;
+            font-family: Bahnschrift;
+            font-size: 24px;
+            background-color: #FFDEAD;
+            width: 13em;
+            height: 35px;
+        }
+        #sub{
+            font-weight: bold;
+            font-family: Bahnschrift;
+            font-size: 24px;
+            background-color: #FFDEAD;
+            width: 13em;
+            height: 35px;
+        }
+        p{
+            background-color: #FF6347;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Delicious Buffet Restaurant</h1>
+        <label for="">Customer Name</label>
+        <input type="text" name="" id="customerName" placeholder="Enter your name" required><br><br>
+        <label for="">Contact No</label>
+        <input type="number" name="" id="contactNo" placeholder="Enter your mobile number" required><br><br>
+        <label for="">Date</label>
+        <input type="date" name="" id="bookingDate" required><br><br>
+        <label for="">Timings</label>
+        <input type="radio" name="" id="session1" >&nbsp; 1-4pm<input type="radio" name="" id="session2" placeholder="Enter your name">&nbsp; 4-7pm<input type="radio" name="" id="session3" placeholder="Enter your name">&nbsp; 7-10pm<br><br>
+        <label for="">Vegetarian</label>
+        <table border="1">
+            <tr>
+                <td >Adult&nbsp;&nbsp;&nbsp;<input type="number" name="vegAdult" id="vegAdult"></td>
+            </tr>
+            <tr>
+                <td >Kids(5-9 yrs)&nbsp;&nbsp;&nbsp;<input type="number" name="" id="vegKids"></td>
+            </tr>
+        </table><br>
+        <label for="">Non-Vegetarian</label>
+        <table border="1">
+            <tr>
+                <td id="">Adult&nbsp;&nbsp;&nbsp;<input type="number" name="" id="nonVegAdult"></td>
+            </tr>
+            <tr>
+                <td id="">Kids(5-9 yrs)&nbsp;&nbsp;&nbsp;<input type="number" name="" id="nonVegKid"></td>
+            </tr>
+        </table><br>    
+        Occasion<select name="" id="">
+            <option value="">Team Dinner</option>
+            <option value="">Family Reunion</option>
+            <option value="">Party</option>
+            <option value="">Birthday Celebration</option>
+            <option value="">Team Lunch</option>
+        </select><br><br>
+        <label for="">Parking</label>
+        <input type="checkbox" name="" id="parking" placeholder="Enter your name">Parking Required<br><br>
+        <button type="button" onclick="billCalculate()">Submit</button>
+        <!-- <input type="submit" id="sub" value="Submit" onclick="billCalculat();" ></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <input type="reset" id="res" value="Clear"></input>
+        <p id="result"></p>
+    </form>
+    
+
+</body>
+</html>

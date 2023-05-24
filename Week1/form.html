@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fetch(){
+            n = document.f1.Fname.value;
+            l = document.f1.Lname.value;
+            a = document.f1.age.value;
+            e = document.f1.email.value;
+            ad = document.f1.add.value;
+            m = document.f1.Male.value;
+          
+
+            document.getElementById("p1").innerHTML = "Welcome "+n+l;
+
+        }
+       
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Register</legend>
+            <form action="#" method="post" name="f1" autocomplete="off">
+                Enter your First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Fname"><br><br>
+                Enter your Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Lname"><br><br>
+                Enter your Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="age"><br><br>
+                Enter your Email-id: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" required name="email"><br><br>
+                Enter your password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass"><br><br>
+                Enter your Phone Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br><br>
+                Enter your Address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="" cols="20" rows="5" name="add"></textarea><br><br>
+                Hobbies <br>
+                <input type="checkbox" id="sc"> Stamp Collection <br> 
+                <input type="checkbox" id="cc"> Coin Collection <br>
+                <input type="checkbox" name="" id="rb"> Reading Books <br><br>
+                Sex &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Gender" id="" value="Male" >Male
+                <input type="radio" name="Gender" id="" value="Female">Female <br> <br>
+                <label for="Experience">Experience:</label>
+                <select name="experinence" >
+                    <option value="volvo" id="exp">-----select------</option>
+                    <option value="0-1">0-1</option>
+                    <option value="1-2">1-2</option>
+                    <option value="2-3">2-3</option>
+                    <option value="3-4">3-4</option>
+                    <option value="4-5">4-5</option>
+                    <option value="5-6">5-6</option>
+                </select> <br> <br>
+                <input type="button" value="Register" onclick="fetch();"></input>
+            </form>  
+        </fieldset>
+        
+            <h2>Entered Data By you:</h2>
+            <p id="p1"></p>
+            
+    </div><br><br><br>
+    </body>
+</html>

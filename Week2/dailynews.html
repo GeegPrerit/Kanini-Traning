@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top: 0;
+            margin-left: 0;
+            text-align: center;
+          }
+        h1{
+            background-color: aqua;
+            
+            /*content: url("img/kanini_logo.png");*/
+            align-items: center;
+        }
+        h3{            
+            /*content: url("img/kanini_logo.png");*/
+            align-items: center;
+            color: red;
+            font-size: 40px;
+        }
+        p{
+            color: black;
+        }
+        img{
+            border-style:solid;
+            border-radius: 40px 40px 40px 40px;
+            border-color: black;
+        }
+        h2{
+            border-style: solid;
+        }
+        h2::after{
+            content: url("img/flower.jfif");
+        }
+        h2::before{
+            content: url("img/flower.jfif");
+        }
+        #ap::after{
+            content: url("img/clap.jfif");
+
+        }
+        #ap::before{
+            content: url("img/clap.jfif");
+        }
+        #ap{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kanini</h1>
+    <h3>Daily News</h3>
+    
+    <img src="img/prerit.jpg" height="200"alt="">
+    <p><b>Prerit Khandelwal</b></p>
+    <h2><b>Best Employee of the Month</b></h2>
+    <p id="ap"><b>Kanini Appreciate You</b></p>
+</body>
+</html>

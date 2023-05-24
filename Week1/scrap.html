@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function geo(){
+            var x = document.getElementById("geo");
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                window.alert("supported");
+            }
+        }
+        function showPosition(position){
+            x.innerHTML = "Latitude: "+position.latitude+
+            "<br>Longitude: "+position.longitude;
+        }
+    </script>
+</head>
+<body onload="geo()">
+    <button onclick="geo()">Click to know your position</button>
+    <p id="'geo"></p>
+</body>
+</html>

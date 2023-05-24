@@ -1,0 +1,58 @@
+Employee
+========
+Empid	           int	  					PRI	
+Empname	       varchar(20)	
+Designation	    varchar(20)	
+Dateofjoin	    date	
+Salary	           int		
+
+Project
+=======
+Projectno			int   PRI
+Projectname	   varchar(20)
+Duration	      int
+Budget	         int
+
+
+EMP_PROJ
+========
+Empid	        int     FK
+Projectno	     int     FK
+
+
+insert into Employee values(1001,'Jane','Senior Programmer','2009-04-06',100000);
+
+insert into Employee values(1002,'Jenny','Junior Programmer','2010-08-13',75000); 
+
+insert into Employee values(1003,'John','Professor','2012-09-16',80000); 
+
+insert into Employee values(1004,'Jasper','Associate Professor','2013-11-02',60000);
+
+insert into Employee values(1005,'Jansi','Assistant Professor','2013-09-16',60000); 
+
+insert into Project values(401,'Storage Concepts',65,50000); 
+insert into Project values(402,'Robotics',55,90000);
+insert into Project values(403,'Deep Learning',50,80000); insert into Project values(404,'Machine Learning',69,99000); insert into Project values(405,'Networking',67,89000);
+
+insert into EMP_PROJ values(1001,401); 
+insert into EMP_PROJ values(1002,401); 
+insert into EMP_PROJ values(1003,401); 
+insert into EMP_PROJ values(1004,402); 
+insert into EMP_PROJ values(1005,402); 
+insert into EMP_PROJ values(1001,402); 
+insert into EMP_PROJ values(1002,403); 
+insert into EMP_PROJ values(1004,403);
+insert into EMP_PROJ values(1005,403); 
+insert into EMP_PROJ values(1003,404); 
+insert into EMP_PROJ values(1002,404);
+insert into EMP_PROJ values(1001,405); 
+insert into EMP_PROJ values(1002,405); 
+insert into EMP_PROJ values(1003,405); 
+insert into EMP_PROJ values(1004,405); 
+
+/*1.	DISPLAY THE PROJECT DETAILS OF PROJECT DONE BY JOHN */
+/*2.	DISPLAY THE PROJECT NAME AND DURATION OF PROJECTS DONE BY JUNIOR PROGRAMMER*/
+/*3.	DISPLAY THE NAME OF EMPLOYEES WHO ARE WORKING UNDER ROBOTICS */
+/*4.	DISPLAY THE EMPLOYEE ID OF EMPLOYEES WHO ARE WORKING IN PROJECTS WITH DURATION 50 TO 75*/
+/*5.	DISPLAY THE NAME OF EMPLOYEES WHO ARE WORKING IN PROJECT NO 402 */
+/*6.	DISPLAY THE PROJECT NAME AND DURATION OF THE PROJECTS DONE BY EMPLOYEES WHO HAVE JOINED ON 02-11-2013*/
