@@ -1,0 +1,37 @@
+Presentation : 17.04.2023
+
+Application DEvelopment using ADO.NET
+====================================
+Login
+
+upon successful login,
+
+the menu should be
+1. CRUD using Connected Architecture
+2. CRUD using disconnected Architecture
+
+upon selection of choice =1,
+
+Submenu
+
+1. Insert
+2. Delete
+   1. delete by Id
+   2. delete by name
+3. update
+   1. update by Id
+   2. update by name
+4. select
+
+upon selection of choice =2,
+
+Submenu
+
+1. Insert
+2. Delete
+   1. delete by Id
+   2. delete by name
+3. update
+   1. update by Id
+   2. update by name
+4. select

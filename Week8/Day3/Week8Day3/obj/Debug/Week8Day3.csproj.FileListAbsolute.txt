@@ -1,0 +1,8 @@
+P:\Kanini\Training\Week8\Day3\Week8Day3\bin\Debug\Week8Day3.exe.config
+P:\Kanini\Training\Week8\Day3\Week8Day3\bin\Debug\Week8Day3.exe
+P:\Kanini\Training\Week8\Day3\Week8Day3\bin\Debug\Week8Day3.pdb
+P:\Kanini\Training\Week8\Day3\Week8Day3\obj\Debug\Week8Day3.csproj.AssemblyReference.cache
+P:\Kanini\Training\Week8\Day3\Week8Day3\obj\Debug\Week8Day3.csproj.SuggestedBindingRedirects.cache
+P:\Kanini\Training\Week8\Day3\Week8Day3\obj\Debug\Week8Day3.csproj.CoreCompileInputs.cache
+P:\Kanini\Training\Week8\Day3\Week8Day3\obj\Debug\Week8Day3.exe
+P:\Kanini\Training\Week8\Day3\Week8Day3\obj\Debug\Week8Day3.pdb

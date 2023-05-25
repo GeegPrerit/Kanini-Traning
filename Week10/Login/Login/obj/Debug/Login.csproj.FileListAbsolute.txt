@@ -1,0 +1,8 @@
+P:\Kanini\Training\Week10\Login\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+P:\Kanini\Training\Week10\Login\Login\obj\Debug\Login.csproj.SuggestedBindingRedirects.cache
+P:\Kanini\Training\Week10\Login\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+P:\Kanini\Training\Week10\Login\Login\bin\Debug\Login.exe.config
+P:\Kanini\Training\Week10\Login\Login\bin\Debug\Login.exe
+P:\Kanini\Training\Week10\Login\Login\bin\Debug\Login.pdb
+P:\Kanini\Training\Week10\Login\Login\obj\Debug\Login.exe
+P:\Kanini\Training\Week10\Login\Login\obj\Debug\Login.pdb
